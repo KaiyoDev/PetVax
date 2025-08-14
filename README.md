@@ -9,6 +9,7 @@
 ### ✅ Yêu Cầu Hệ Thống
 - Python 3.10+
 - Git
+- Rect JS
 
 ### ⚙️ Cài Đặt
 ```bash
