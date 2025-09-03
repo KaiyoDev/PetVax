@@ -82,6 +82,7 @@ Phạm vi triển khai:
 - Trung tâm tiêm chủng thú cưng tại thành phố và địa phương
 - Phòng khám thú y có nhu cầu quản lý tiêm chủng chuyên nghiệp
 - Dịch vụ thú y lưu động cung cấp tiêm chủng tại nhà
+
 💡 4. Giải pháp đề xuất
 
 Hệ thống quản lý tiêm chủng vaccine cho thú cưng (PVMS) được phát triển nhằm cung cấp một giải pháp toàn diện, cho phép chủ nuôi dễ dàng:
