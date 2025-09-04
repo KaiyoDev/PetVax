@@ -222,7 +222,7 @@ PVMS --> Notify : Gửi thông báo
 ##Code PlantULM ERD
 ```bash
 @startuml
-title ERD - Hệ thống PVMS (phiên bản đơn giản)
+title ERD - Hệ thống PVMS
 
 entity NhanVien
 entity TaiKhoan
