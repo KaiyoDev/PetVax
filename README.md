@@ -103,7 +103,40 @@ Admin (Quản trị viên): Quản lý tài khoản, công thức mặc định 
 
 
 <img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/116aa2f5-4323-4d34-b5a1-34d757ebbadd" />
++Code PlantULM Context
+@startuml
+@context
+title Biểu đồ ngữ cảnh hệ thống PVMS
 
+entity "Khách Hàng" as KH
+entity "Nhân Viên" as NV
+entity "Quản Trị Viên" as QTV
+entity "Bác Sĩ" as BS
+entity "Cổng thanh toán" as Payment
+entity "Thông báo" as Notify
+
+system "Hệ thống PVMS" as PVMS
+
+KH --> PVMS : Gửi yêu cầu / Đặt lịch
+KH --> PVMS : Gửi yêu cầu hỗ trợ\nnhận lịch hẹn
+PVMS --> KH : Thông báo hệ thống
+PVMS --> KH : Thông báo lịch tiêm
+
+NV --> PVMS : Hỗ trợ khách hàng
+NV --> PVMS : Quản lý lịch hẹn
+NV --> PVMS : Quản lý khách hàng
+
+QTV --> PVMS : Quản lý website
+QTV --> PVMS : Tạo báo cáo
+
+PVMS --> Payment : Yêu cầu thanh toán
+Payment --> PVMS : Xác nhận giao dịch
+
+PVMS --> BS : Trả kết quả
+PVMS --> BS : Nhận lịch tiêm
+
+PVMS --> Notify : Gửi thông báo
+@enduml
 
 1. Người dùng (Chủ nuôi thú cưng)
 
@@ -173,41 +206,5 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 - Giao diện người dùng phải thân thiện, dễ thao tác với người không am hiểu công nghệ.
 - Các chức năng chính phải được bố trí hợp lý, dễ truy cập và có hướng dẫn sử dụng rõ ràng.
 
-
-
-+Code PlantULM Context
-@startuml
-@context
-title Biểu đồ ngữ cảnh hệ thống PVMS
-
-entity "Khách Hàng" as KH
-entity "Nhân Viên" as NV
-entity "Quản Trị Viên" as QTV
-entity "Bác Sĩ" as BS
-entity "Cổng thanh toán" as Payment
-entity "Thông báo" as Notify
-
-system "Hệ thống PVMS" as PVMS
-
-KH --> PVMS : Gửi yêu cầu / Đặt lịch
-KH --> PVMS : Gửi yêu cầu hỗ trợ\nnhận lịch hẹn
-PVMS --> KH : Thông báo hệ thống
-PVMS --> KH : Thông báo lịch tiêm
-
-NV --> PVMS : Hỗ trợ khách hàng
-NV --> PVMS : Quản lý lịch hẹn
-NV --> PVMS : Quản lý khách hàng
-
-QTV --> PVMS : Quản lý website
-QTV --> PVMS : Tạo báo cáo
-
-PVMS --> Payment : Yêu cầu thanh toán
-Payment --> PVMS : Xác nhận giao dịch
-
-PVMS --> BS : Trả kết quả
-PVMS --> BS : Nhận lịch tiêm
-
-PVMS --> Notify : Gửi thông báo
-@enduml
 
 
