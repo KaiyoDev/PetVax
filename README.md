@@ -102,7 +102,7 @@ Nutritionist (Chuyên gia dinh dưỡng): Cung cấp dữ liệu dinh dưỡng, 
 Admin (Quản trị viên): Quản lý tài khoản, công thức mặc định và giám sát hệ thống.
 
 
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/116aa2f5-4323-4d34-b5a1-34d757ebbadd" />
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/116aa2f5-4323-4d34-b5a1-34d757ebbadd" />
 ## Code PlantULM Context
 @startuml
 @context
