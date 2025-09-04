@@ -1,4 +1,4 @@
-# 🐾 PetVax - Hệ Thống Quản Lý Tiêm Chủng Thú Cưng
+<img width="986" height="691" alt="image" src="https://github.com/user-attachments/assets/177da81e-30da-4ee5-b15d-7af8b1e6e314" /># 🐾 PetVax - Hệ Thống Quản Lý Tiêm Chủng Thú Cưng
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.3%2B-lightgrey)
@@ -94,6 +94,18 @@ Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ
 
 II. Chức năng chính của hệ thống
 
+1 Các tác nhân
+Guest (Khách hàng): Người dùng đăng nhập vào để xem thông tin.
+User (Người dùng/Thành viên gia đình): Người dùng có tài khoản, đăng nhập để quản lý nguyên liệu, công thức, lập kế hoạch bữa ăn.
+Planner (Người lập kế hoạch): Lên kế hoạch bữa ăn, sinh danh sách mua sắm và xem thống kê dinh dưỡng.
+Nutritionist (Chuyên gia dinh dưỡng): Cung cấp dữ liệu dinh dưỡng, đưa ra khuyến nghị về chế độ ăn.
+Admin (Quản trị viên): Quản lý tài khoản, công thức mặc định và giám sát hệ thống.
+
+//
+<img width="986" height="691" alt="image" src="https://github.com/user-attachments/assets/116aa2f5-4323-4d34-b5a1-34d757ebbadd" />
+
+
+//
 1. Người dùng (Chủ nuôi thú cưng)
 
 Người dùng là đối tượng chính sử dụng hệ thống để quản lý việc tiêm chủng và chăm sóc sức khỏe cho thú cưng. Các chức năng chính bao gồm:
