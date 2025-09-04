@@ -95,11 +95,6 @@ Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ
 II. Chức năng chính của hệ thống
 
 1 Các tác nhân
-Guest (Khách hàng): Người dùng đăng nhập vào để xem thông tin.
-User (Người dùng/Thành viên gia đình): Người dùng có tài khoản, đăng nhập để quản lý nguyên liệu, công thức, lập kế hoạch bữa ăn.
-Planner (Người lập kế hoạch): Lên kế hoạch bữa ăn, sinh danh sách mua sắm và xem thống kê dinh dưỡng.
-Nutritionist (Chuyên gia dinh dưỡng): Cung cấp dữ liệu dinh dưỡng, đưa ra khuyến nghị về chế độ ăn.
-Admin (Quản trị viên): Quản lý tài khoản, công thức mặc định và giám sát hệ thống.
 
 
 <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/116aa2f5-4323-4d34-b5a1-34d757ebbadd" />
@@ -144,38 +139,51 @@ PVMS --> Notify : Gửi thông báo
 
 Người dùng là đối tượng chính sử dụng hệ thống để quản lý việc tiêm chủng và chăm sóc sức khỏe cho thú cưng. Các chức năng chính bao gồm:
 
-- 🔐 Đăng ký và đăng nhập hệ thống
-- 🐶 Quản lý hồ sơ thú cưng: tên, tuổi, giống loài, màu sắc, hình ảnh, ngày sinh…
-- 💉 Quản lý lịch sử tiêm chủng: loại vaccine, thời gian tiêm, kết quả tiêm
-- 📅 Đặt lịch tiêm chủng tại trung tâm hoặc tại nhà
-- 🧾 Tra cứu thông tin vaccine, gói vaccine và bảng giá
-- 🩺 Nhận tư vấn sức khỏe trước tiêm: khám tổng quát, lựa chọn vaccine phù hợp
-- 📲 Nhận thông báo lịch tiêm sắp tới và các lưu ý sau tiêm
-- 💳 Thanh toán dịch vụ qua các kênh điện tử (VnPay, PayOS…)
-- 🛂 Yêu cầu cấp hộ chiếu thú cưng
-- 📖 Xem lịch sử dịch vụ đã sử dụng và quản lý hồ sơ cá nhân
+- Đăng ký và đăng nhập hệ thống
+- Quản lý hồ sơ thú cưng: tên, tuổi, giống loài, màu sắc, hình ảnh, ngày sinh…
+- Quản lý lịch sử tiêm chủng: loại vaccine, thời gian tiêm, kết quả tiêm
+- Đặt lịch tiêm chủng tại trung tâm hoặc tại nhà
+- Tra cứu thông tin vaccine, gói vaccine và bảng giá
+- Nhận tư vấn sức khỏe trước tiêm: khám tổng quát, lựa chọn vaccine phù hợp
+- Nhận thông báo lịch tiêm sắp tới và các lưu ý sau tiêm
+- Thanh toán dịch vụ qua các kênh điện tử (VnPay, PayOS…)
+- Yêu cầu cấp hộ chiếu thú cưng
+- Xem lịch sử dịch vụ đã sử dụng và quản lý hồ sơ cá nhân
 
 2. Bác sĩ thú y (Vet)
 
 Bác sĩ thú y là người trực tiếp thực hiện khám và tiêm chủng cho thú cưng. Hệ thống hỗ trợ bác sĩ với các chức năng sau:
 
-- 🩺 Khám sức khỏe thú cưng trước khi tiêm
-- ⏳ Điều chỉnh lịch tiêm nếu thú cưng không đủ điều kiện sức khỏe
-- ✅ Xác nhận quá trình tiêm chủng và ghi nhận phản ứng sau tiêm
-- 📋 Xem danh sách ca khám trong ngày
-- 📂 Truy cập hồ sơ và lịch sử tiêm chủng của thú cưng
-- 🔄 Đặt lịch tái khám khi phát hiện vấn đề sức khỏe
+- Khám sức khỏe thú cưng trước khi tiêm
+- Điều chỉnh lịch tiêm nếu thú cưng không đủ điều kiện sức khỏe
+- Xác nhận quá trình tiêm chủng và ghi nhận phản ứng sau tiêm
+- Xem danh sách ca khám trong ngày
+- Truy cập hồ sơ và lịch sử tiêm chủng của thú cưng
+- Đặt lịch tái khám khi phát hiện vấn đề sức khỏe
 
 3. Thú cưng (Đối tượng quản lý)
 
 Thú cưng là trung tâm của hệ thống, được định danh và quản lý thông qua hồ sơ chi tiết. Các chức năng liên quan đến thú cưng bao gồm:
 
-- 🆔 Định danh bằng microchip hoặc hình ảnh
-- 📄 Lưu trữ hồ sơ cá nhân: tên, tuổi, giống, màu sắc, hình ảnh…
-- 💉 Lưu trữ lịch sử tiêm chủng: loại vaccine, thời gian, kết quả
-- 🩺 Ghi nhận tình trạng sức khỏe trước và sau tiêm
-- 🛂 Cấp hộ chiếu thú cưng khi đủ điều kiện tiêm chủng
-Dưới đây là phần 
+- Định danh bằng microchip hoặc hình ảnh
+- Lưu trữ hồ sơ cá nhân: tên, tuổi, giống, màu sắc, hình ảnh…
+- Lưu trữ lịch sử tiêm chủng: loại vaccine, thời gian, kết quả
+- Ghi nhận tình trạng sức khỏe trước và sau tiêm
+- Cấp hộ chiếu thú cưng khi đủ điều kiện tiêm chủng
+
+Sơ đồ Use-case tổng quát:
+
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/e02da7a6-622c-4b4d-90e4-54c95eeab2a2" />
+
+Sơ đồ USE-CASE chi tiết:
+1.Sơ đồ Use-case người dùng:
+
+2.Sơ đồ Use-case nhân viên:
+
+3.Sơ đồ Use-case bác sĩ:
+
+4.Sơ đồ Use-case quản trị viên:
+
 
 III. Yêu cầu phi chức năng
 
