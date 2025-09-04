@@ -1,4 +1,4 @@
-<img width="986" height="691" alt="image" src="https://github.com/user-attachments/assets/177da81e-30da-4ee5-b15d-7af8b1e6e314" /># 🐾 PetVax - Hệ Thống Quản Lý Tiêm Chủng Thú Cưng
+# 🐾 PetVax - Hệ Thống Quản Lý Tiêm Chủng Thú Cưng
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.3%2B-lightgrey)
