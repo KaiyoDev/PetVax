@@ -219,7 +219,7 @@ PVMS --> Notify : Gửi thông báo
 @enduml
 ```
 ---
-## Code PlantULM USEUSE
+## Code PlantULM USE
 ```bash
 @startuml
 left to right direction
