@@ -182,8 +182,7 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 - Giao diện người dùng phải thân thiện, dễ thao tác với người không am hiểu công nghệ.
 - Các chức năng chính phải được bố trí hợp lý, dễ truy cập và có hướng dẫn sử dụng rõ ràng.
 
-## Code PlantULM Context
-```bash
+## Code PlantULM Context```bash
 @startuml
 @context
 title Biểu đồ ngữ cảnh hệ thống PVMS
@@ -219,4 +218,5 @@ PVMS --> Notify : Gửi thông báo
 @enduml
 ```
 ---
+
 
