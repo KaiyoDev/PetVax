@@ -219,5 +219,36 @@ PVMS --> Notify : Gửi thông báo
 @enduml
 ```
 ---
+## Code PlantULM USEUSE
+```bash
+@startuml
+left to right direction
+actor "Người dùng" as User
+actor "Bác Sĩ" as BS
+actor "<<Hệ Thống>>\nThông báo" as Notify
+
+rectangle "Hệ thống PVMS" {
+    usecase "Đặt Lịch Tiêm" as UC1
+    usecase "Xem lịch" as UC2
+    usecase "Thanh toán" as UC3
+    usecase "Thanh Toán Online" as UC4
+    usecase "Gửi hóa đơn" as UC5
+    usecase "Thực hiện Tiêm" as UC6
+}
+
+' Liên kết actor
+User --> UC1
+BS --> UC6
+Notify --> UC5
+
+' Include / Extend
+UC1 .> UC2 : <<include>>
+UC1 .> UC6 : <<include>>
+UC1 .> UC3 : <<include>>
+UC3 <|-- UC4 : generalization
+UC4 .> UC5 : <<include>>
+@enduml
+```
+---
 
 
