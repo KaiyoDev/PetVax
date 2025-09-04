@@ -101,11 +101,10 @@ Planner (Người lập kế hoạch): Lên kế hoạch bữa ăn, sinh danh s�
 Nutritionist (Chuyên gia dinh dưỡng): Cung cấp dữ liệu dinh dưỡng, đưa ra khuyến nghị về chế độ ăn.
 Admin (Quản trị viên): Quản lý tài khoản, công thức mặc định và giám sát hệ thống.
 
-//
-<img width="986" height="691" alt="image" src="https://github.com/user-attachments/assets/116aa2f5-4323-4d34-b5a1-34d757ebbadd" />
+
+<img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/116aa2f5-4323-4d34-b5a1-34d757ebbadd" />
 
 
-//
 1. Người dùng (Chủ nuôi thú cưng)
 
 Người dùng là đối tượng chính sử dụng hệ thống để quản lý việc tiêm chủng và chăm sóc sức khỏe cho thú cưng. Các chức năng chính bao gồm:
