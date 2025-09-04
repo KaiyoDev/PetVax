@@ -144,6 +144,9 @@ Sơ đồ Use-case tổng quát:
 Sơ đồ USE-CASE chi tiết:
 1.Sơ đồ Use-case người dùng:
 
+<img width="396" height="355" alt="image" src="https://github.com/user-attachments/assets/0d4643b3-4006-4401-aac8-322ac7999cd4" />
+
+
 2.Sơ đồ Use-case nhân viên:
 
 3.Sơ đồ Use-case bác sĩ:
