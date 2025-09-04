@@ -4,9 +4,9 @@
 ![Flask](https://img.shields.io/badge/Flask-2.3%2B-lightgrey)
 ![Status](https://img.shields.io/badge/Status-Development-yellow)
 
-## 🚀 Bắt Đầu Nhanh
+## Bắt Đầu Nhanh
 
-### ✅ Yêu Cầu Hệ Thống
+### Yêu Cầu Hệ Thống
 - Python 3.10+
 - Git
 - Rect JS
@@ -55,7 +55,7 @@ Ngày nay, với số lượng thú cưng (đặc biệt là chó và mèo) ngà
 
 Các trung tâm tiêm chủng mong muốn có một phần mềm giúp chủ nuôi dễ dàng kiểm soát việc tiêm chủng cho thú cưng, đồng thời nâng cao hiệu quả quản lý và chất lượng dịch vụ.
 
-🎯 2. Mục tiêu
+2. Mục tiêu
 
 Hệ thống PVMS được xây dựng với các mục tiêu chính:
 
@@ -65,7 +65,7 @@ Hệ thống PVMS được xây dựng với các mục tiêu chính:
 - Tối ưu hóa hoạt động vận hành của trung tâm tiêm chủng
 - Tăng cường kết nối giữa chủ nuôi, bác sĩ thú y và nhân viên trung tâm
 
-📌 3. Phạm vi ứng dụng
+3. Phạm vi ứng dụng
 
 Hệ thống PVMS được thiết kế để phục vụ các đối tượng sau:
 
@@ -94,7 +94,8 @@ Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ
 
 II. Chức năng chính của hệ thống
 
-1 Các tác nhân
+1. Sơ đồ Context DG:
+(Miêu tả các tác nhân)
 
 
 <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/116aa2f5-4323-4d34-b5a1-34d757ebbadd" />
