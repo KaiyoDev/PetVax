@@ -130,9 +130,10 @@ Thú cưng là trung tâm của hệ thống, được định danh và quản l
 - 🩺 Ghi nhận tình trạng sức khỏe trước và sau tiêm
 - 🛂 Cấp hộ chiếu thú cưng khi đủ điều kiện tiêm chủng
 ---
-# Code PlantUML Context
+<details>
+<summary> Code PlantUML</summary>
 
-```bash 
+```plantuml 
 @startuml
 @context
 title Biểu đồ ngữ cảnh hệ thống PVMS
@@ -159,7 +160,53 @@ QTV --> PVMS : Quản lý website
 QTV --> PVMS : Tạo báo cáo
 
 PVMS --> Payment : Yêu cầu thanh toán
-Payment --> PVMS : bash
+Payment --> PVMS : Xác nhận giao dịch
+
+PVMS --> BS : Trả kết quả
+PVMS --> BS : Nhận lịch tiêm
+
+PVMS --> Notify : Gửi thông báo
+@enduml
+```
+<details>
+<img width="1159" height="748" alt="image" src="https://github.com/user-attachments/assets/f0273a38-b3b4-4f1a-880a-295f83cd41ab" />
+
+---
+<details>
+<summary> Code PlantUML</summary>
+
+```plantuml
+@startuml
+title ERD - Hệ thống PVMS (phiên bản đơn giản)
+
+entity NhanVien
+entity TaiKhoan
+entity KhachHang
+entity BacSi
+entity ThuCung
+entity LichTiem
+entity Vaccine
+entity ThanhToan
+entity HoSo
+
+NhanVien -- TaiKhoan : quản lý
+KhachHang -- ThuCung : sở hữu
+ThuCung -- LichTiem : được lập
+Vaccine -- LichTiem : được sử dụng
+LichTiem -- ThanhToan : có
+BacSi -- HoSo : ghi nhận
+LichTiem -- HoSo : lưu trữ
+
+@enduml
+```
+</details>
+<img width="1054" height="665" alt="image" src="https://github.com/user-attachments/assets/3936d5c8-ed2c-4c7b-9e91-629e8a4331a5" />
+
+---
+<details>
+<summary> Code PlantUML</summary>
+
+```plantuml
 @startuml
 left to right direction
 actor "Người dùng" as User
@@ -186,8 +233,8 @@ UC1 .> UC6 : <<include>>
 UC1 .> UC3 : <<include>>
 UC3 <|-- UC4 : generalization
 UC4 .> UC5 : <<include>>
+
 @enduml
 ```
----
-
-
+</details>
+<img width="1039" height="746" alt="image" src="https://github.com/user-attachments/assets/ac64f68b-86de-4428-ad1d-58b354001486" />
