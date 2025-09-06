@@ -248,6 +248,7 @@ LichTiem -- HoSo : lưu trữ
 @enduml
 ```
 ---
+<details>
 <summary> Code PlantUML USE </summary>
 
 ```plantuml
@@ -280,5 +281,6 @@ UC4 .> UC5 : <<include>>
 @enduml
 ```
 ---
+<details>
 
 
