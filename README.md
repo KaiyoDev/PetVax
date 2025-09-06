@@ -248,8 +248,9 @@ LichTiem -- HoSo : lưu trữ
 @enduml
 ```
 ---
-## Code PlantULM USE
-```bash
+<summary> Code PlantUML USE </summary>
+
+```plantuml
 @startuml
 left to right direction
 actor "Người dùng" as User
