@@ -130,10 +130,9 @@ Thú cưng là trung tâm của hệ thống, được định danh và quản l
 - 🩺 Ghi nhận tình trạng sức khỏe trước và sau tiêm
 - 🛂 Cấp hộ chiếu thú cưng khi đủ điều kiện tiêm chủng
 ---
-<details>
-<summary> Code PlantUML Context </summary>
+# Code PlantUML Context
 
-```plantuml
+```bash 
 @startuml
 @context
 title Biểu đồ ngữ cảnh hệ thống PVMS
@@ -160,50 +159,7 @@ QTV --> PVMS : Quản lý website
 QTV --> PVMS : Tạo báo cáo
 
 PVMS --> Payment : Yêu cầu thanh toán
-Payment --> PVMS : Xác nhận giao dịch
-
-PVMS --> BS : Trả kết quả
-PVMS --> BS : Nhận lịch tiêm
-
-PVMS --> Notify : Gửi thông báo
-@enduml
-```
----
-<details>
----
-<details>
-<summary> Code PlantUML ERD </summary>
-```plantuml
-@startuml
-title ERD - Hệ thống PVMS
-
-entity NhanVien
-entity TaiKhoan
-entity KhachHang
-entity BacSi
-entity ThuCung
-entity LichTiem
-entity Vaccine
-entity ThanhToan
-entity HoSo
-
-NhanVien -- TaiKhoan : quản lý
-KhachHang -- ThuCung : sở hữu
-ThuCung -- LichTiem : được lập
-Vaccine -- LichTiem : được sử dụng
-LichTiem -- ThanhToan : có
-BacSi -- HoSo : ghi nhận
-LichTiem -- HoSo : lưu trữ
-
-@enduml
-```
----
-<details>
------    
-<details>
-<summary> Code PlantUML USE </summary>
-
-```plantuml
+Payment --> PVMS : bash
 @startuml
 left to right direction
 actor "Người dùng" as User
@@ -233,6 +189,5 @@ UC4 .> UC5 : <<include>>
 @enduml
 ```
 ---
-<details>
 
 
