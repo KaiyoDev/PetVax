@@ -129,9 +129,10 @@ Thú cưng là trung tâm của hệ thống, được định danh và quản l
 - 💉 Lưu trữ lịch sử tiêm chủng: loại vaccine, thời gian, kết quả
 - 🩺 Ghi nhận tình trạng sức khỏe trước và sau tiêm
 - 🛂 Cấp hộ chiếu thú cưng khi đủ điều kiện tiêm chủng
-
+---
 <details>
 <summary> Code PlantUML Context </summary>
+
 ```plantuml
 @startuml
 @context
@@ -169,6 +170,7 @@ PVMS --> Notify : Gửi thông báo
 ```
 ---
 <details>
+---
 <details>
 <summary> Code PlantUML ERD </summary>
 ```plantuml
@@ -197,6 +199,7 @@ LichTiem -- HoSo : lưu trữ
 ```
 ---
 <details>
+-----    
 <details>
 <summary> Code PlantUML USE </summary>
 
