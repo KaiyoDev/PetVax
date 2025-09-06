@@ -170,23 +170,8 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 - Hệ thống phải hỗ trợ xác thực hai yếu tố (2FA) cho tài khoản quản trị viên.
 
 3. Tính khả dụng và ổn định
-- Hệ thống phải hoạt động liên tục 24/7, với thời gian gián đoạn không vượt quá 0.1% mỗi tháng.
-- Phải có cơ chế sao lưu dữ liệu định kỳ và khôi phục khi xảy ra sự cố.
-
-4. Tính tương thích
-- Hệ thống phải hỗ trợ đầy đủ font Unicode để hiển thị tiếng Việt chính xác.
-- Giao diện phải tương thích với các trình duyệt phổ biến (Chrome, Edge, Firefox, Safari).
-- Hệ thống phải hoạt động tốt trên cả thiết bị máy tính và di động (responsive design).
-
-5. Khả năng mở rộng
-- Kiến trúc hệ thống phải cho phép tích hợp thêm các dịch vụ thú y khác như xét nghiệm, điều trị, lưu trú…
-- Có thể kết nối với hệ thống quản lý microchip quốc gia hoặc quốc tế trong tương lai.
-6. Tính dễ sử dụng
-- Giao diện người dùng phải thân thiện, dễ thao tác với người không am hiểu công nghệ.
-- Các chức năng chính phải được bố trí hợp lý, dễ truy cập và có hướng dẫn sử dụng rõ ràng.
-
-## Code PlantULM Context
-```bash
+- Hệ thống phải hoạt động liên tục 24/7, với thời giContext </summary>
+```plantuml
 @startuml
 @context
 title Biểu đồ ngữ cảnh hệ thống PVMS
@@ -222,8 +207,9 @@ PVMS --> Notify : Gửi thông báo
 @enduml
 ```
 ---
-## Code PlantULM ERD
-```bash
+<details>
+<summary> Code PlantUML USE </summary>
+```plantuml
 @startuml
 title ERD - Hệ thống PVMS
 
