@@ -171,7 +171,7 @@ PVMS --> Notify : Gửi thông báo
 <details>
 <img width="1159" height="748" alt="image" src="https://github.com/user-attachments/assets/f0273a38-b3b4-4f1a-880a-295f83cd41ab" />
 
----
+
 <details>
 <summary> Code PlantUML</summary>
 
@@ -202,7 +202,7 @@ LichTiem -- HoSo : lưu trữ
 </details>
 <img width="1054" height="665" alt="image" src="https://github.com/user-attachments/assets/3936d5c8-ed2c-4c7b-9e91-629e8a4331a5" />
 
----
+
 <details>
 <summary> Code PlantUML</summary>
 
