@@ -47,7 +47,7 @@ PetVax/
 └── docs/                 # Tài liệu
 ```
 
-I. Tổng quan dự án:
+# I. Tổng quan dự án:
 
 🐾 1. Bối cảnh
 
@@ -92,7 +92,7 @@ Hệ thống quản lý tiêm chủng vaccine cho thú cưng (PVMS) được ph�
 - Theo dõi quá trình tiêm chủng và lịch sử dịch vụ
 Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ nuôi quản lý thông tin một cách chính xác và hiệu quả.
 
-II. Chức năng chính của hệ thống
+# II. Chức năng chính của hệ thống
 
 1. Người dùng (Chủ nuôi thú cưng)
 
@@ -129,7 +129,7 @@ Thú cưng là trung tâm của hệ thống, được định danh và quản l
 - 💉 Lưu trữ lịch sử tiêm chủng: loại vaccine, thời gian, kết quả
 - 🩺 Ghi nhận tình trạng sức khỏe trước và sau tiêm
 - 🛂 Cấp hộ chiếu thú cưng khi đủ điều kiện tiêm chủng
----
+# III. Sơ Đồ Và PlantULM  
 <details>
 <summary> Code PlantUML</summary>
 
