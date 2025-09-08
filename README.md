@@ -156,7 +156,8 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 **🧩 5. Khả năng mở rộng**
 - Kiến trúc hệ thống phải cho phép tích hợp thêm các dịch vụ thú y khác như xét nghiệm, điều trị, lưu trú…
 - Có thể kết nối với hệ thống quản lý microchip quốc gia hoặc quốc tế trong tương lai.
-**🧠 6. Tính dễ sử dụng**
+
+ **🧠 6. Tính dễ sử dụng**
 - Giao diện người dùng phải thân thiện, dễ thao tác với người không am hiểu công nghệ.
 - Các chức năng chính phải được bố trí hợp lý, dễ truy cập và có hướng dẫn sử dụng rõ ràng.
 
