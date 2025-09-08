@@ -94,7 +94,7 @@ Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ
 
 # II. Chức năng chính của hệ thống
 
-1. Người dùng (Chủ nuôi thú cưng)
+**1. Người dùng (Chủ nuôi thú cưng)**
 
 Người dùng là đối tượng chính sử dụng hệ thống để quản lý việc tiêm chủng và chăm sóc sức khỏe cho thú cưng. Các chức năng chính bao gồm:
 
@@ -133,7 +133,7 @@ Thú cưng là trung tâm của hệ thống, được định danh và quản l
 
 Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận hành mà hệ thống PVMS cần đáp ứng để đảm bảo hiệu suất, bảo mật và khả năng sử dụng lâu dài.
 
-⚙️ 1. Hiệu năng hệ thống
+**1. Hiệu năng hệ thống**
 - Hệ thống phải xử lý đồng thời nhiều yêu cầu từ người dùng mà không bị gián đoạn.
 - Thời gian phản hồi cho các thao tác cơ bản (đăng nhập, tra cứu, đặt lịch) không vượt quá 3 giây.
 - Hệ thống phải có khả năng mở rộng để phục vụ hàng nghìn người dùng và thú cưng.
