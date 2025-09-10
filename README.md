@@ -392,7 +392,10 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/5b5d1e8b-a13b-4fea-b7df-795b52c41c27" />
 
-```bash
+<details>
+<summary>Code PlantUML</summary>
+
+```plantuml
 @startuml
 title Quy trình: Đăng ký và Đăng nhập
 
@@ -420,7 +423,7 @@ Auth --> Web: yêu cầu thành công {user, token}
 Web --> User: Vào Dashboard
 @enduml
 ```
----
+<details>
 **2.Quy trình Đặt lịch tiêm tại trung tâm và thanh toán**
 
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/fe116c62-956e-4c95-a23f-c84c7cfd1ea1" />
