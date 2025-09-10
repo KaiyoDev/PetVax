@@ -463,7 +463,8 @@ Web --> Customer: Hiển thị xác nhận
 @enduml
 ```
 <details>
-  
+
+---
 # V. Sơ Đồ Và PlantULM  
 
 <details> 
