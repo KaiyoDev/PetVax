@@ -391,59 +391,76 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 **1.Quy trình Đăng ký và đăng nhập:**
 
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/5b5d1e8b-a13b-4fea-b7df-795b52c41c27" />
+<details>
+<summary>Code PlantUML</summary>
+```plantuml
+@startuml
+title Quy trình: Đăng ký và Đăng nhập
 
+actor User
+participant "Web Client" as Web
+participant "Auth API" as Auth
+database "DB" as DB
 
+== Đăng ký ==
+User -> Web: Nhập thông tin đăng ký
+Web -> Auth: POST /api/auth/register
+Auth -> DB: Kiểm tra trùng username/email
+DB --> Auth: OK
+Auth -> DB: Tạo User(role=CUSTOMER)
+DB --> Auth: OK
+Auth --> Web: thành công {user, token}
+Web --> User: Lưu token, chuyển hướng
+
+== Đăng nhập ==
+User -> Web: Nhập username/password
+Web -> Auth: POST /api/auth/login
+Auth -> DB: Xác thực thông tin
+DB --> Auth: OK
+Auth --> Web: yêu cầu thành công {user, token}
+Web --> User: Vào Dashboard
+@enduml
+```
+</details> 
 **2.Quy trình Đặt lịch tiêm tại trung tâm và thanh toán**
 
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/fe116c62-956e-4c95-a23f-c84c7cfd1ea1" />
-
-
-
-# IV. Sơ Đồ Và PlantULM  
-```bash 
+<details>
+<summary>Code PlantUML</summary>
+```plantuml
 @startuml
-title Trình tự: Khách đặt lịch tiêm tại trung tâm
+title Quy trình: Đặt lịch tại trung tâm và thanh toán
 
 actor Customer
-participant "Web Client (React)" as Web
-participant "Auth API (/api/auth)" as Auth
-participant "Customer API (/api/customer)" as Cust
-database "DB (SQLAlchemy)" as DB
-participant "Payment Gateway (VnPay - Sim)" as Pay
-participant "Notification Service" as Noti
+participant "Web Client" as Web
+participant "Customer API" as Cust
+participant "VnPay (mock)" as Pay
+database "DB" as DB
+participant "Notification" as Noti
 
-== Đăng nhập ==
-Customer -> Web: Nhập username/password
-Web -> Auth: POST /login {username, password}
-Auth -> DB: Kiểm tra user, mật khẩu
-DB --> Auth: OK, trả user
-Auth --> Web: 200 {JWT token}
-Web -> Web: Lưu token (localStorage), set Authorization
-
-== Tạo lịch hẹn ==
-Customer -> Web: Chọn pet, ngày giờ, type=center
-Web -> Cust: POST /appointments {pet_id, appointment_date, type}
-Cust -> DB: Tạo Appointment(status=PENDING)
-DB --> Cust: Appointment ID
+Customer -> Web: Chọn pet, thời gian, type=center
+Web -> Cust: POST /api/customer/appointments
+Cust -> DB: INSERT Appointment(status=PENDING, type=center)
+DB --> Cust: {appointment}
 Cust --> Web: 201 {appointment}
 
-== Thanh toán ==
-Customer -> Web: Chọn thanh toán
-Web -> Cust: POST /payments {appointment_id, method=vnpay}
-Cust -> DB: Tạo Payment(PENDING)
-Cust -> Pay: Giao dịch (mô phỏng)
+Customer -> Web: Thực hiện thanh toán
+Web -> Cust: POST /api/customer/payments {appointment_id, method=vnpay}
+Cust -> DB: INSERT Payment(PENDING)
+Cust -> Pay: Khởi tạo giao dịch
 Pay --> Cust: PAID + transaction_id
-Cust -> DB: Cập nhật Payment=PAID
-Cust --> Web: 201 {payment=PAID}
-
-== Thông báo ==
+Cust -> DB: UPDATE Payment=PAID
+Cust -> DB: UPDATE Appointment=CONFIRMED
 Cust -> Noti: Gửi thông báo xác nhận
-Noti -> DB: Lưu Notification
+Noti -> DB: INSERT Notification
 Noti --> Cust: OK
-
-Web --> Customer: Hiển thị "Lịch hẹn đã được tạo & thanh toán thành công"
+Cust --> Web: thành công {payment=PAID}
+Web --> Customer: Hiển thị xác nhận
 @enduml
 ```
+</details> 
+
+# IV. Sơ Đồ Và PlantULM  
 
 <details> 
 <summary> Code PlantUML</summary> 
