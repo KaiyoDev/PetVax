@@ -242,6 +242,51 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 <details>
 <summary> Code PlantUML</summary>
 
+///
+```plantuml
+@startuml
+title Trình tự: Khách đặt lịch tiêm tại trung tâm
+
+actor Customer
+participant "Web Client (React)" as Web
+participant "Auth API (/api/auth)" as Auth
+participant "Customer API (/api/customer)" as Cust
+database "DB (SQLAlchemy)" as DB
+participant "Payment Gateway (VnPay - Sim)" as Pay
+participant "Notification Service" as Noti
+
+== Đăng nhập ==
+Customer -> Web: Nhập username/password
+Web -> Auth: POST /login {username, password}
+Auth -> DB: Kiểm tra user, mật khẩu
+DB --> Auth: OK, trả user
+Auth --> Web: 200 {JWT token}
+Web -> Web: Lưu token (localStorage), set Authorization
+
+== Tạo lịch hẹn ==
+Customer -> Web: Chọn pet, ngày giờ, type=center
+Web -> Cust: POST /appointments {pet_id, appointment_date, type}
+Cust -> DB: Tạo Appointment(status=PENDING)
+DB --> Cust: Appointment ID
+Cust --> Web: 201 {appointment}
+
+== Thanh toán ==
+Customer -> Web: Chọn thanh toán
+Web -> Cust: POST /payments {appointment_id, method=vnpay}
+Cust -> DB: Tạo Payment(PENDING)
+Cust -> Pay: Giao dịch (mô phỏng)
+Pay --> Cust: PAID + transaction_id
+Cust -> DB: Cập nhật Payment=PAID
+Cust --> Web: 201 {payment=PAID}
+
+== Thông báo ==
+Cust -> Noti: Gửi thông báo xác nhận
+Noti -> DB: Lưu Notification
+Noti --> Cust: OK
+
+Web --> Customer: Hiển thị "Lịch hẹn đã được tạo & thanh toán thành công"
+@enduml
+///
 ```plantuml 
 @startuml
 @context
