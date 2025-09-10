@@ -266,6 +266,29 @@ QT --> UC10
 **1.Người dùng**
 
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/6b498820-d0d6-484c-8168-bd01a6c5c666" />
+<details>
+<summary>Code PlantUML</summary>
+
+```plantuml
+@startuml
+left to right direction
+
+actor "Khách hàng" as KH
+
+rectangle "PetVax" {
+  usecase "Đăng ký/đăng nhập" as UC1
+  usecase "Quản lí thông tin" as UC2
+  usecase "Nhận thông báo" as UC3
+  usecase "Đặt lịch tiêm" as UC4
+}
+
+KH --> UC1
+KH --> UC2
+KH --> UC3
+KH --> UC4
+@enduml
+```
+</details> 
 
 **2.Bác sĩ thú y**
 
