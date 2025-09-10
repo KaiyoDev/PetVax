@@ -424,6 +424,7 @@ Web --> User: Vào Dashboard
 **2.Quy trình Đặt lịch tiêm tại trung tâm và thanh toán**
 
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/fe116c62-956e-4c95-a23f-c84c7cfd1ea1" />
+
 ```bash 
 @startuml
 title Quy trình: Đặt lịch tại trung tâm và thanh toán
