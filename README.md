@@ -294,6 +294,25 @@ KH --> UC4
 
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/156c11aa-6129-4626-b156-1f139327e307" />
 
+<details>
+<summary>Code PlantUML</summary>
+
+```plantuml
+@startuml
+left to right direction
+
+actor "Bác sĩ thú y" as BS
+
+PetVax {
+  usecase "Kiểm tra tình trạng thú cưng" as UC1
+  usecase "Tiêm thú cưng" as UC2
+}
+
+BS --> UC1
+BS --> UC2
+@enduml
+```
+</details> 
 
 **3.Nhân viên**
 
@@ -340,9 +359,7 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 
 # IV. Sơ Đồ Và PlantULM  
 <details>
-<summary> Code PlantUML</summary>
-
-///
+<summary> Code PlantUML</summary> 
 ```plantuml
 @startuml
 title Trình tự: Khách đặt lịch tiêm tại trung tâm
@@ -386,7 +403,11 @@ Noti --> Cust: OK
 
 Web --> Customer: Hiển thị "Lịch hẹn đã được tạo & thanh toán thành công"
 @enduml
-///
+```
+</details>
+---
+<details>
+<summary> Code PlantUML</summary>
 ```plantuml 
 @startuml
 @context
