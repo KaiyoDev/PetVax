@@ -192,7 +192,8 @@ Quản trị viên là người điều hành hệ thống cũng như quản lí
 
 **2.Bác sĩ thú y**
 
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/b450e23b-10a9-43cd-be79-80e31fd6763a" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/156c11aa-6129-4626-b156-1f139327e307" />
+
 
 **3.Nhân viên**
 
