@@ -93,10 +93,14 @@ Hệ thống quản lý tiêm chủng vaccine cho thú cưng (PVMS) được ph�
 Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ nuôi quản lý thông tin một cách chính xác và hiệu quả.
 
 # II. Chức năng chính của hệ thống
-1.Các tác nhân:
+**1.Các tác nhân:**
+
 -Khách hàng: đăng kí/đăng nhập vào đặt lịch tiêm cho thú cưng.
+
 -Nhân viên: quản lí lịch tiêm, xem thông báo, tư vấn khách hàng.
+
 -Bác sĩ thú y: xem tình trạng và tiêm loại vaccine phù hợp cho thú cưng.
+
 -Quản trị viên: quản lí tài khoản, quản lí vaccine và hệ thống.
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c5bd6638-645b-4040-8913-568a24f503ed" />
