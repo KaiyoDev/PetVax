@@ -146,7 +146,7 @@ Nhân viên là người tương tác và tiếp xúc với khách hàng, hỗ t
 
 -Hỗ trợ chuẩn bị vaccine, theo dõi sẵn sàng vật tư
 
--Xác nhận đến của khách (check-in)
+-Xác nhận khách (check-in)
 
 -Thực hiện tiêm dưới giám sát vet (nếu quy trình yêu cầu)
 
@@ -176,6 +176,30 @@ Quản trị viên là người điều hành hệ thống cũng như quản lí
 -Cấu hình kênh thông báo (email/SMS/push) và cổng thanh toán
 
 -Quản trị bảo mật: audit log, quyền truy cập, khóa tài khoản
+
+# Sơ đồ Use-case:
+
+<img width="400" height="700" alt="image" src="https://github.com/user-attachments/assets/ef8aa9c7-9dd3-4fff-903a-fbeaeb416b94" />
+
+# Sơ đồ Use-case chi tiết:
+**1.Người dùng**
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/6b498820-d0d6-484c-8168-bd01a6c5c666" />
+
+**2.Bác sĩ thú y**
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/b450e23b-10a9-43cd-be79-80e31fd6763a" />
+
+**3.Nhân viên**
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/fe2850b6-5734-4834-9c2e-ede2e80842e1" />
+
+
+**4.Quản trị viên**
+
+<img width="433" height="462" alt="image" src="https://github.com/user-attachments/assets/4877ae3b-7ecd-48ae-9176-6e6bd86270f2" />
+
+
 
 # III. Yêu cầu phi chức năng
 
