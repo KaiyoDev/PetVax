@@ -431,10 +431,10 @@ Noti --> Cust: OK
 Web --> Customer: Hiển thị "Lịch hẹn đã được tạo & thanh toán thành công"
 @enduml
 ```
----
 
 <details> 
-<summary> Code PlantUML</summary>
+<summary> Code PlantUML</summary> 
+  
 ```plantuml 
 @startuml
 @context
@@ -472,7 +472,7 @@ PVMS --> Notify : Gửi thông báo
 ```
 <details>
 <img width="1159" height="748" alt="image" src="https://github.com/user-attachments/assets/f0273a38-b3b4-4f1a-880a-295f83cd41ab" />
----
+
 <details>
 <summary> Code PlantUML</summary>
 
