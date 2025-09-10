@@ -106,24 +106,39 @@ Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ
 Người dùng là đối tượng chính sử dụng hệ thống để quản lý việc tiêm chủng và chăm sóc sức khỏe cho thú cưng. Các chức năng chính bao gồm:
 
 -Đăng ký và đăng nhập hệ thống
+
 -Quản lý hồ sơ thú cưng: tên, tuổi, giống loài, màu sắc, hình ảnh, ngày sinh…
+
 -Quản lý lịch sử tiêm chủng: loại vaccine, thời gian tiêm, kết quả tiêm
+
 -Đặt lịch tiêm chủng tại trung tâm hoặc tại nhà
+
 -Tra cứu thông tin vaccine, gói vaccine và bảng giá
+
 -Nhận tư vấn sức khỏe trước tiêm: khám tổng quát, lựa chọn vaccine phù hợp
+
 -Nhận thông báo lịch tiêm sắp tới và các lưu ý sau tiêm
+
 -Thanh toán dịch vụ qua các kênh điện tử (VnPay, PayOS…)
+
 -Yêu cầu cấp hộ chiếu thú cưng
+
 -Xem lịch sử dịch vụ đã sử dụng và quản lý hồ sơ cá nhân
+
 **2. Bác sĩ thú y (Vet)**
 
 Bác sĩ thú y là người trực tiếp thực hiện khám và tiêm chủng cho thú cưng. Hệ thống hỗ trợ bác sĩ với các chức năng sau:
 
 -Khám sức khỏe thú cưng trước khi tiêm
+
 -Điều chỉnh lịch tiêm nếu thú cưng không đủ điều kiện sức khỏe
+
 -Xác nhận quá trình tiêm chủng và ghi nhận phản ứng sau tiêm
+
 -Xem danh sách ca khám trong ngày
+
 -Truy cập hồ sơ và lịch sử tiêm chủng của thú cưng
+
 -Đặt lịch tái khám khi phát hiện vấn đề sức khỏe
 
 **3.Nhân viên (Staff)**
