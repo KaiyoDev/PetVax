@@ -145,23 +145,36 @@ Bác sĩ thú y là người trực tiếp thực hiện khám và tiêm chủng
 Nhân viên là người tương tác và tiếp xúc với khách hàng, hỗ trợ đặt lịch cũng như tư vấn dịch vụ với các chức năng sau:
 
 -Hỗ trợ chuẩn bị vaccine, theo dõi sẵn sàng vật tư
+
 -Xác nhận đến của khách (check-in)
+
 -Thực hiện tiêm dưới giám sát vet (nếu quy trình yêu cầu)
+
 -Ghi chép cơ bản về quy trình tiêm (thời gian, người thực hiện)
+
 -Quản lý tồn kho vaccine cơ bản (thêm/giảm, kiểm kê sơ bộ)
+
 -Hỗ trợ cấp hộ chiếu, in ấn giấy tờ
 
 **4.Quản trị viên (Admin)**
 Quản trị viên là người điều hành hệ thống cũng như quản lí cơ sở dữ liệu với các chức năng sau:
 
 -Quản lý người dùng (CRUD user, phân vai trò)
+
 -Quản lý bác sĩ, nhân viên, cơ sở/chi nhánh
+
 -Quản lý danh mục vaccine: tên, nhà sản xuất, lô, hạn dùng, liều, lịch tiêm chuẩn
+
 -Quản lý gói vaccine & bảng giá (dịch vụ) — tạo, sửa, kích hoạt/hủy
+
 -Quản lý lịch làm việc bác sĩ/chi nhánh
+
 -Xem báo cáo: số lượng tiêm theo ngày/tuần/tháng, doanh thu, tồn kho, phản ứng sau tiêm
+
 -Xử lý khiếu nại / hoàn tiền / refund policy
+
 -Cấu hình kênh thông báo (email/SMS/push) và cổng thanh toán
+
 -Quản trị bảo mật: audit log, quyền truy cập, khóa tài khoản
 
 # III. Yêu cầu phi chức năng
