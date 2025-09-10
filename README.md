@@ -218,6 +218,50 @@ Quản trị viên là người điều hành hệ thống cũng như quản lí
 
 <img width="400" height="700" alt="image" src="https://github.com/user-attachments/assets/ef8aa9c7-9dd3-4fff-903a-fbeaeb416b94" />
 
+<details>
+<summary>Code PlantUML</summary>
+
+```plantuml
+@startuml
+left to right direction
+
+actor "Khách hàng" as KH
+actor "Nhân viên" as NV
+actor "Bác sĩ thú y" as BS
+actor "Người quản lí" as QT
+
+rectangle "PetVax" {
+  usecase "Đăng ký / Đăng nhập" as UC1
+  usecase "Quản lí hồ sơ" as UC2
+  usecase "Quản lí thú cưng" as UC3
+  usecase "Thanh toán" as UC4
+  usecase "Đặt lịch" as UC5
+  usecase "Thông báo" as UC6
+  usecase "Quản lí vaccine" as UC7
+  usecase "Ghi lại vaccine đã tiêm" as UC8
+  usecase "Quản lí người dùng" as UC9
+  usecase "Gửi vaccine" as UC10
+}
+
+KH --> UC1
+KH --> UC2
+KH --> UC3
+KH --> UC4
+KH --> UC5
+
+NV --> UC6
+NV --> UC7
+
+BS --> UC8
+BS --> UC7
+
+QT --> UC9
+QT --> UC7
+QT --> UC10
+@enduml
+```
+</details> 
+
 # Sơ đồ Use-case chi tiết:
 **1.Người dùng**
 
