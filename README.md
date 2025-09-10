@@ -110,7 +110,6 @@ Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ
 
 ```plantuml
 @startuml
-left to right direction
 
 actor "Khách hàng"
 actor "Nhân viên"
@@ -118,7 +117,7 @@ actor "Bác sĩ thú y"
 actor "Quản trị viên"
 
 rectangle "Hệ thống PetVax" {
-  usecase "Đăng ký / Đăng nhập"
+  usecase "Đăng ký ,Đăng nhập"
   usecase "Đặt lịch tiêm vaccine"
   usecase "Xem lịch sử tiêm"
   usecase "Ghi nhận kết quả tiêm"
@@ -223,7 +222,6 @@ Quản trị viên là người điều hành hệ thống cũng như quản lí
 
 ```plantuml
 @startuml
-left to right direction
 
 actor "Khách hàng" as KH
 actor "Nhân viên" as NV
@@ -275,7 +273,7 @@ left to right direction
 
 actor "Khách hàng" as KH
 
-rectangle "PetVax" {
+PetVax {
   usecase "Đăng ký/đăng nhập" as UC1
   usecase "Quản lí thông tin" as UC2
   usecase "Nhận thông báo" as UC3
@@ -341,6 +339,25 @@ NV --> UC2
 
 <img width="433" height="462" alt="image" src="https://github.com/user-attachments/assets/4877ae3b-7ecd-48ae-9176-6e6bd86270f2" />
 
+<details>
+<summary>Code PlantUML</summary>
+
+```plantuml
+@startuml
+left to right direction
+
+actor "Quản trị viên" as QT
+
+PetVax {
+  usecase "Quản lí tài khoản" as UC1
+  usecase "Quản lí dữ liệu (khách hàng, bác sĩ, nhân viên)" as UC2
+}
+
+QT --> UC1
+QT --> UC2
+@enduml
+```
+</details> 
 
 
 # III. Yêu cầu phi chức năng
@@ -422,8 +439,6 @@ Noti --> Cust: OK
 Web --> Customer: Hiển thị "Lịch hẹn đã được tạo & thanh toán thành công"
 @enduml
 ```
-</details>
-----
 
 <details>
 <summary> Code PlantUML</summary>
