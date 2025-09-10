@@ -387,9 +387,7 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 - Các chức năng chính phải được bố trí hợp lý, dễ truy cập và có hướng dẫn sử dụng rõ ràng.
 
 # IV. Sơ Đồ Và PlantULM  
-<details>
-<summary> Code PlantUML</summary> 
-```plantuml
+```bash 
 @startuml
 title Trình tự: Khách đặt lịch tiêm tại trung tâm
 
@@ -433,8 +431,8 @@ Noti --> Cust: OK
 Web --> Customer: Hiển thị "Lịch hẹn đã được tạo & thanh toán thành công"
 @enduml
 ```
-
-<details>
+---
+<details> 
 <summary> Code PlantUML</summary>
 ```plantuml 
 @startuml
