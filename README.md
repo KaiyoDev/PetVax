@@ -105,6 +105,39 @@ Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c5bd6638-645b-4040-8913-568a24f503ed" />
 
+<details>
+<summary>Code PlantUML</summary>
+
+```plantuml
+@startuml
+left to right direction
+
+actor "Khách hàng"
+actor "Nhân viên"
+actor "Bác sĩ thú y"
+actor "Quản trị viên"
+
+rectangle "Hệ thống PetVax" {
+  usecase "Đăng ký / Đăng nhập"
+  usecase "Đặt lịch tiêm vaccine"
+  usecase "Xem lịch sử tiêm"
+  usecase "Ghi nhận kết quả tiêm"
+  usecase "Quản lí hệ thống"
+}
+
+"Khách hàng" --> "Đăng ký / Đăng nhập"
+"Khách hàng" --> "Đặt lịch tiêm vaccine"
+"Khách hàng" --> "Xem lịch sử tiêm"
+
+"Nhân viên" --> "Xem lịch sử tiêm"
+
+"Bác sĩ thú y" --> "Ghi nhận kết quả tiêm"
+
+"Quản trị viên" --> "Quản lí hệ thống"
+@enduml
+```
+</details> 
+
 **1. Người dùng (Chủ nuôi thú cưng)**
 
 Người dùng là đối tượng chính sử dụng hệ thống để quản lý việc tiêm chủng và chăm sóc sức khỏe cho thú cưng. Các chức năng chính bao gồm:
