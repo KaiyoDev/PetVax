@@ -386,7 +386,7 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 - Giao diện người dùng phải thân thiện, dễ thao tác với người không am hiểu công nghệ.
 - Các chức năng chính phải được bố trí hợp lý, dễ truy cập và có hướng dẫn sử dụng rõ ràng.
 
-# Quy trình hoạt động
+# IV. Quy trình hoạt động
 
 **1.Quy trình Đăng ký và đăng nhập:**
 
@@ -428,7 +428,10 @@ Web --> User: Vào Dashboard
 
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/fe116c62-956e-4c95-a23f-c84c7cfd1ea1" />
 
-```bash 
+<details>
+<summary>Code PlantUML</summary>
+
+```plantuml
 @startuml
 title Quy trình: Đặt lịch tại trung tâm và thanh toán
 
@@ -459,8 +462,8 @@ Cust --> Web: thành công {payment=PAID}
 Web --> Customer: Hiển thị xác nhận
 @enduml
 ```
----
-# IV. Sơ Đồ Và PlantULM  
+<details>
+# V. Sơ Đồ Và PlantULM  
 
 <details> 
 <summary> Code PlantUML</summary> 
