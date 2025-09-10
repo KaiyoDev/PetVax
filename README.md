@@ -455,6 +455,7 @@ Cust --> Web: thành công {payment=PAID}
 Web --> Customer: Hiển thị xác nhận
 @enduml
 ```
+---
 # IV. Sơ Đồ Và PlantULM  
 
 <details> 
