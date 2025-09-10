@@ -386,6 +386,18 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 - Giao diện người dùng phải thân thiện, dễ thao tác với người không am hiểu công nghệ.
 - Các chức năng chính phải được bố trí hợp lý, dễ truy cập và có hướng dẫn sử dụng rõ ràng.
 
+# Quy trình hoạt động
+
+**1.Quy trình Đăng ký và đăng nhập:**
+
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/5b5d1e8b-a13b-4fea-b7df-795b52c41c27" />
+
+
+**2.Quy trình Đặt lịch tiêm tại trung tâm và thanh toán**
+
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/43f4d2e1-c915-4c27-9e25-2338bfcf9b51" />
+
+
 # IV. Sơ Đồ Và PlantULM  
 ```bash 
 @startuml
