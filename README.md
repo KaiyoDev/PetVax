@@ -395,7 +395,8 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 
 **2.Quy trình Đặt lịch tiêm tại trung tâm và thanh toán**
 
-<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/43f4d2e1-c915-4c27-9e25-2338bfcf9b51" />
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/fe116c62-956e-4c95-a23f-c84c7cfd1ea1" />
+
 
 
 # IV. Sơ Đồ Và PlantULM  
