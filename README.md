@@ -93,42 +93,62 @@ Hệ thống quản lý tiêm chủng vaccine cho thú cưng (PVMS) được ph�
 Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ nuôi quản lý thông tin một cách chính xác và hiệu quả.
 
 # II. Chức năng chính của hệ thống
+1.Các tác nhân:
+-Khách hàng: đăng kí/đăng nhập vào đặt lịch tiêm cho thú cưng.
+-Nhân viên: quản lí lịch tiêm, xem thông báo, tư vấn khách hàng.
+-Bác sĩ thú y: xem tình trạng và tiêm loại vaccine phù hợp cho thú cưng.
+-Quản trị viên: quản lí tài khoản, quản lí vaccine và hệ thống.
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c5bd6638-645b-4040-8913-568a24f503ed" />
 
 **1. Người dùng (Chủ nuôi thú cưng)**
 
 Người dùng là đối tượng chính sử dụng hệ thống để quản lý việc tiêm chủng và chăm sóc sức khỏe cho thú cưng. Các chức năng chính bao gồm:
 
-- 🔐 Đăng ký và đăng nhập hệ thống
-- 🐶 Quản lý hồ sơ thú cưng: tên, tuổi, giống loài, màu sắc, hình ảnh, ngày sinh…
-- 💉 Quản lý lịch sử tiêm chủng: loại vaccine, thời gian tiêm, kết quả tiêm
-- 📅 Đặt lịch tiêm chủng tại trung tâm hoặc tại nhà
-- 🧾 Tra cứu thông tin vaccine, gói vaccine và bảng giá
-- 🩺 Nhận tư vấn sức khỏe trước tiêm: khám tổng quát, lựa chọn vaccine phù hợp
-- 📲 Nhận thông báo lịch tiêm sắp tới và các lưu ý sau tiêm
-- 💳 Thanh toán dịch vụ qua các kênh điện tử (VnPay, PayOS…)
-- 🛂 Yêu cầu cấp hộ chiếu thú cưng
-- 📖 Xem lịch sử dịch vụ đã sử dụng và quản lý hồ sơ cá nhân
-
+-Đăng ký và đăng nhập hệ thống
+-Quản lý hồ sơ thú cưng: tên, tuổi, giống loài, màu sắc, hình ảnh, ngày sinh…
+-Quản lý lịch sử tiêm chủng: loại vaccine, thời gian tiêm, kết quả tiêm
+-Đặt lịch tiêm chủng tại trung tâm hoặc tại nhà
+-Tra cứu thông tin vaccine, gói vaccine và bảng giá
+-Nhận tư vấn sức khỏe trước tiêm: khám tổng quát, lựa chọn vaccine phù hợp
+-Nhận thông báo lịch tiêm sắp tới và các lưu ý sau tiêm
+-Thanh toán dịch vụ qua các kênh điện tử (VnPay, PayOS…)
+-Yêu cầu cấp hộ chiếu thú cưng
+-Xem lịch sử dịch vụ đã sử dụng và quản lý hồ sơ cá nhân
 **2. Bác sĩ thú y (Vet)**
 
 Bác sĩ thú y là người trực tiếp thực hiện khám và tiêm chủng cho thú cưng. Hệ thống hỗ trợ bác sĩ với các chức năng sau:
 
-- 🩺 Khám sức khỏe thú cưng trước khi tiêm
-- ⏳ Điều chỉnh lịch tiêm nếu thú cưng không đủ điều kiện sức khỏe
-- ✅ Xác nhận quá trình tiêm chủng và ghi nhận phản ứng sau tiêm
-- 📋 Xem danh sách ca khám trong ngày
-- 📂 Truy cập hồ sơ và lịch sử tiêm chủng của thú cưng
-- 🔄 Đặt lịch tái khám khi phát hiện vấn đề sức khỏe
+-Khám sức khỏe thú cưng trước khi tiêm
+-Điều chỉnh lịch tiêm nếu thú cưng không đủ điều kiện sức khỏe
+-Xác nhận quá trình tiêm chủng và ghi nhận phản ứng sau tiêm
+-Xem danh sách ca khám trong ngày
+-Truy cập hồ sơ và lịch sử tiêm chủng của thú cưng
+-Đặt lịch tái khám khi phát hiện vấn đề sức khỏe
 
-**3. Thú cưng (Đối tượng quản lý)**
+**3.Nhân viên (Staff)**
+Nhân viên là người tương tác và tiếp xúc với khách hàng, hỗ trợ đặt lịch cũng như tư vấn dịch vụ với các chức năng sau:
 
-Thú cưng là trung tâm của hệ thống, được định danh và quản lý thông qua hồ sơ chi tiết. Các chức năng liên quan đến thú cưng bao gồm:
+-Hỗ trợ chuẩn bị vaccine, theo dõi sẵn sàng vật tư
+-Xác nhận đến của khách (check-in)
+-Thực hiện tiêm dưới giám sát vet (nếu quy trình yêu cầu)
+-Ghi chép cơ bản về quy trình tiêm (thời gian, người thực hiện)
+-Quản lý tồn kho vaccine cơ bản (thêm/giảm, kiểm kê sơ bộ)
+-Hỗ trợ cấp hộ chiếu, in ấn giấy tờ
 
-- 🆔 Định danh bằng microchip hoặc hình ảnh
-- 📄 Lưu trữ hồ sơ cá nhân: tên, tuổi, giống, màu sắc, hình ảnh…
-- 💉 Lưu trữ lịch sử tiêm chủng: loại vaccine, thời gian, kết quả
-- 🩺 Ghi nhận tình trạng sức khỏe trước và sau tiêm
-- 🛂 Cấp hộ chiếu thú cưng khi đủ điều kiện tiêm chủng
+**4.Quản trị viên (Admin)**
+Quản trị viên là người điều hành hệ thống cũng như quản lí cơ sở dữ liệu với các chức năng sau:
+
+-Quản lý người dùng (CRUD user, phân vai trò)
+-Quản lý bác sĩ, nhân viên, cơ sở/chi nhánh
+-Quản lý danh mục vaccine: tên, nhà sản xuất, lô, hạn dùng, liều, lịch tiêm chuẩn
+-Quản lý gói vaccine & bảng giá (dịch vụ) — tạo, sửa, kích hoạt/hủy
+-Quản lý lịch làm việc bác sĩ/chi nhánh
+-Xem báo cáo: số lượng tiêm theo ngày/tuần/tháng, doanh thu, tồn kho, phản ứng sau tiêm
+-Xử lý khiếu nại / hoàn tiền / refund policy
+-Cấu hình kênh thông báo (email/SMS/push) và cổng thanh toán
+-Quản trị bảo mật: audit log, quyền truy cập, khóa tài khoản
+
 # III. Yêu cầu phi chức năng
 
 Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận hành mà hệ thống PVMS cần đáp ứng để đảm bảo hiệu suất, bảo mật và khả năng sử dụng lâu dài.
