@@ -317,7 +317,25 @@ BS --> UC2
 **3.Nhân viên**
 
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/fe2850b6-5734-4834-9c2e-ede2e80842e1" />
+<details>
+<summary>Code PlantUML</summary>
 
+```plantuml
+@startuml
+left to right direction
+
+actor "Nhân viên" as NV
+
+PetVax {
+  usecase "Hỗ trợ Tư vấn khách hàng" as UC1
+  usecase "Xem thông tin (khách hàng, lịch tiêm, ca trực)" as UC2
+}
+
+NV --> UC1
+NV --> UC2
+@enduml
+```
+</details> 
 
 **4.Quản trị viên**
 
@@ -405,7 +423,8 @@ Web --> Customer: Hiển thị "Lịch hẹn đã được tạo & thanh toán t
 @enduml
 ```
 </details>
----
+----
+
 <details>
 <summary> Code PlantUML</summary>
 ```plantuml 
