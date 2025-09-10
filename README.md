@@ -124,7 +124,7 @@ rectangle "Hệ thống PetVax" {
   usecase "Quản lí hệ thống"
 }
 
-"Khách hàng" --> "Đăng ký / Đăng nhập"
+"Khách hàng" --> "Đăng ký, Đăng nhập"
 "Khách hàng" --> "Đặt lịch tiêm vaccine"
 "Khách hàng" --> "Xem lịch sử tiêm"
 
@@ -229,7 +229,7 @@ actor "Bác sĩ thú y" as BS
 actor "Người quản lí" as QT
 
 rectangle "PetVax" {
-  usecase "Đăng ký / Đăng nhập" as UC1
+  usecase "Đăng ký , Đăng nhập" as UC1
   usecase "Quản lí hồ sơ" as UC2
   usecase "Quản lí thú cưng" as UC3
   usecase "Thanh toán" as UC4
@@ -269,12 +269,11 @@ QT --> UC10
 
 ```plantuml
 @startuml
-left to right direction
 
 actor "Khách hàng" as KH
 
 PetVax {
-  usecase "Đăng ký/đăng nhập" as UC1
+  usecase "Đăng ký,đăng nhập" as UC1
   usecase "Quản lí thông tin" as UC2
   usecase "Nhận thông báo" as UC3
   usecase "Đặt lịch tiêm" as UC4
@@ -320,8 +319,6 @@ BS --> UC2
 
 ```plantuml
 @startuml
-left to right direction
-
 actor "Nhân viên" as NV
 
 PetVax {
@@ -344,8 +341,6 @@ NV --> UC2
 
 ```plantuml
 @startuml
-left to right direction
-
 actor "Quản trị viên" as QT
 
 PetVax {
@@ -358,7 +353,6 @@ QT --> UC2
 @enduml
 ```
 </details> 
-
 
 # III. Yêu cầu phi chức năng
 
