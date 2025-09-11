@@ -136,79 +136,54 @@ rectangle "Hệ thống PetVax" {
 
 **1. Người dùng (Chủ nuôi thú cưng)**
 
-Người dùng là đối tượng chính sử dụng hệ thống để quản lý việc tiêm chủng và chăm sóc sức khỏe cho thú cưng. Các chức năng chính bao gồm:
+**Người dùng là đối tượng chính sử dụng hệ thống để quản lý việc tiêm chủng và chăm sóc sức khỏe cho thú cưng. Các chức năng chính bao gồm:**
 
--Đăng ký và đăng nhập hệ thống
-
--Quản lý hồ sơ thú cưng: tên, tuổi, giống loài, màu sắc, hình ảnh, ngày sinh…
-
--Quản lý lịch sử tiêm chủng: loại vaccine, thời gian tiêm, kết quả tiêm
-
--Đặt lịch tiêm chủng tại trung tâm hoặc tại nhà
-
--Tra cứu thông tin vaccine, gói vaccine và bảng giá
-
+- Đăng ký và đăng nhập hệ thống
+- Quản lý hồ sơ thú cưng: tên, tuổi, giống loài, màu sắc, hình ảnh, ngày sinh…
+- Quản lý lịch sử tiêm chủng: loại vaccine, thời gian tiêm, kết quả tiêm
+- Đặt lịch tiêm chủng tại trung tâm hoặc tại nhà
+- Tra cứu thông tin vaccine, gói vaccine và bảng giá
 -Nhận tư vấn sức khỏe trước tiêm: khám tổng quát, lựa chọn vaccine phù hợp
-
--Nhận thông báo lịch tiêm sắp tới và các lưu ý sau tiêm
-
--Thanh toán dịch vụ qua các kênh điện tử (VnPay, PayOS…)
-
--Yêu cầu cấp hộ chiếu thú cưng
-
--Xem lịch sử dịch vụ đã sử dụng và quản lý hồ sơ cá nhân
+- Nhận thông báo lịch tiêm sắp tới và các lưu ý sau tiêm
+- Thanh toán dịch vụ qua các kênh điện tử (VnPay, PayOS…)
+- Yêu cầu cấp hộ chiếu thú cưng
+- Xem lịch sử dịch vụ đã sử dụng và quản lý hồ sơ cá nhân
 
 **2. Bác sĩ thú y (Vet)**
 
-Bác sĩ thú y là người trực tiếp thực hiện khám và tiêm chủng cho thú cưng. Hệ thống hỗ trợ bác sĩ với các chức năng sau:
+**Bác sĩ thú y là người trực tiếp thực hiện khám và tiêm chủng cho thú cưng. Hệ thống hỗ trợ bác sĩ với các chức năng sau:**
 
--Khám sức khỏe thú cưng trước khi tiêm
-
--Điều chỉnh lịch tiêm nếu thú cưng không đủ điều kiện sức khỏe
-
--Xác nhận quá trình tiêm chủng và ghi nhận phản ứng sau tiêm
-
--Xem danh sách ca khám trong ngày
-
--Truy cập hồ sơ và lịch sử tiêm chủng của thú cưng
-
--Đặt lịch tái khám khi phát hiện vấn đề sức khỏe
+- Khám sức khỏe thú cưng trước khi tiêm
+- Điều chỉnh lịch tiêm nếu thú cưng không đủ điều kiện sức khỏe
+- Xác nhận quá trình tiêm chủng và ghi nhận phản ứng sau tiêm
+- Xem danh sách ca khám trong ngày
+- Truy cập hồ sơ và lịch sử tiêm chủng của thú cưng
+- Đặt lịch tái khám khi phát hiện vấn đề sức khỏe
 
 **3.Nhân viên (Staff)**
-Nhân viên là người tương tác và tiếp xúc với khách hàng, hỗ trợ đặt lịch cũng như tư vấn dịch vụ với các chức năng sau:
 
--Hỗ trợ chuẩn bị vaccine, theo dõi sẵn sàng vật tư
+**Nhân viên là người tương tác và tiếp xúc với khách hàng, hỗ trợ đặt lịch cũng như tư vấn dịch vụ với các chức năng sau:**
 
--Xác nhận khách (check-in)
-
--Thực hiện tiêm dưới giám sát vet (nếu quy trình yêu cầu)
-
--Ghi chép cơ bản về quy trình tiêm (thời gian, người thực hiện)
-
--Quản lý tồn kho vaccine cơ bản (thêm/giảm, kiểm kê sơ bộ)
-
--Hỗ trợ cấp hộ chiếu, in ấn giấy tờ
+- Hỗ trợ chuẩn bị vaccine, theo dõi sẵn sàng vật tư
+- Xác nhận khách (check-in)
+- Thực hiện tiêm dưới giám sát vet (nếu quy trình yêu cầu)
+- Ghi chép cơ bản về quy trình tiêm (thời gian, người thực hiện)
+- Quản lý tồn kho vaccine cơ bản (thêm/giảm, kiểm kê sơ bộ)
+- Hỗ trợ cấp hộ chiếu, in ấn giấy tờ
 
 **4.Quản trị viên (Admin)**
-Quản trị viên là người điều hành hệ thống cũng như quản lí cơ sở dữ liệu với các chức năng sau:
 
--Quản lý người dùng (CRUD user, phân vai trò)
+**Quản trị viên là người điều hành hệ thống cũng như quản lí cơ sở dữ liệu với các chức năng sau:**
 
--Quản lý bác sĩ, nhân viên, cơ sở/chi nhánh
-
--Quản lý danh mục vaccine: tên, nhà sản xuất, lô, hạn dùng, liều, lịch tiêm chuẩn
-
--Quản lý gói vaccine & bảng giá (dịch vụ) — tạo, sửa, kích hoạt/hủy
-
--Quản lý lịch làm việc bác sĩ/chi nhánh
-
--Xem báo cáo: số lượng tiêm theo ngày/tuần/tháng, doanh thu, tồn kho, phản ứng sau tiêm
-
--Xử lý khiếu nại / hoàn tiền / refund policy
-
--Cấu hình kênh thông báo (email/SMS/push) và cổng thanh toán
-
--Quản trị bảo mật: audit log, quyền truy cập, khóa tài khoản
+- Quản lý người dùng (CRUD user, phân vai trò)
+- Quản lý bác sĩ, nhân viên, cơ sở/chi nhánh
+- Quản lý danh mục vaccine: tên, nhà sản xuất, lô, hạn dùng, liều, lịch tiêm chuẩn
+- Quản lý gói vaccine & bảng giá (dịch vụ) — tạo, sửa, kích hoạt/hủy
+- Quản lý lịch làm việc bác sĩ/chi nhánh
+- Xem báo cáo: số lượng tiêm theo ngày/tuần/tháng, doanh thu, tồn kho, phản ứng sau tiêm
+- Xử lý khiếu nại / hoàn tiền / refund policy
+- Cấu hình kênh thông báo (email/SMS/push) và cổng thanh toán
+- Quản trị bảo mật: audit log, quyền truy cập, khóa tài khoản
 
 # Sơ đồ Use-case:
 
