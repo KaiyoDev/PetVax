@@ -400,7 +400,8 @@ Web --> User: Vào Dashboard
   
 **5.2 Quy trình Đặt lịch tiêm tại trung tâm và thanh toán**
 
-<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/fe116c62-956e-4c95-a23f-c84c7cfd1ea1" />
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/0bee25bf-94dd-4764-8750-5eae4b68e04c" />
+
 
 <details>
 <summary>Code PlantUML</summary>
