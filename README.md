@@ -466,6 +466,7 @@ Web --> Customer: Hiển thị xác nhận
 <details>
   
 **3. Khám trước tiêm và tiêm vaccine**
+
 <img width="667" height="755" alt="image" src="https://github.com/user-attachments/assets/968de381-14b0-4dad-8804-b3c4cc5acf81" />
 
 <details>
@@ -506,6 +507,50 @@ Vet -> VetAPI: POST /api/vet/reactions {vaccination_record_id, reaction_notes}
 VetAPI -> DB: UPDATE VaccinationRecord.reaction_notes
 DB --> VetAPI: OK
 VetAPI --> Vet: 200
+@enduml
+ ```
+<details> 
+  
+**4. Đặt lịch và phân công bác sĩ**
+
+<img width="1033" height="723" alt="image" src="https://github.com/user-attachments/assets/03a66f05-1e0d-42b7-9999-7808410066bd" />
+
+<details>
+<summary>Code PlantUML</summary>
+
+```plantuml
+@startuml
+title Quy trình: Đặt lịch tại nhà và phân công bác sĩ
+
+actor Customer
+actor Staff
+participant "Web Client" as Web
+participant "Customer API" as Cust
+participant "Staff API" as StaffAPI
+database "DB" as DB
+participant "Notification" as Noti
+
+== Khách đặt lịch tại nhà ==
+Customer -> Web: Chọn pet, thời gian, địa chỉ, type=home
+Web -> Cust: POST /api/customer/appointments
+Cust -> DB: INSERT Appointment(type=home, status=PENDING)
+DB --> Cust: {appointment}
+Cust --> Web: 201 {appointment}
+Web --> Customer: Hiển thị tình trạng PENDING
+
+== Nhân viên xử lý ==
+Staff -> StaffAPI: GET /api/staff/appointments
+StaffAPI -> DB: SELECT Appointments
+DB --> StaffAPI: List
+StaffAPI --> Staff: OK
+
+Staff -> StaffAPI: POST /api/staff/appointments/{id}/assign-vet {vet_id}
+StaffAPI -> DB: UPDATE appointment.vet_id
+DB --> StaffAPI: OK
+StaffAPI -> Noti: Gửi thông báo cho Customer & Vet
+Noti -> DB: INSERT Notification
+Noti --> StaffAPI: OK
+StaffAPI --> Staff: 200
 @enduml
  ```
 <details> 
