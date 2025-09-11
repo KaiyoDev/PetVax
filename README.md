@@ -424,6 +424,7 @@ Web --> User: Vào Dashboard
 @enduml
 ```
 <details>
+  
 **2.Quy trình Đặt lịch tiêm tại trung tâm và thanh toán**
 
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/fe116c62-956e-4c95-a23f-c84c7cfd1ea1" />
@@ -463,8 +464,53 @@ Web --> Customer: Hiển thị xác nhận
 @enduml
 ```
 <details>
+  
+**3. Khám trước tiêm và tiêm vaccine**
+<img width="667" height="755" alt="image" src="https://github.com/user-attachments/assets/968de381-14b0-4dad-8804-b3c4cc5acf81" />
 
+<details>
+<summary>Code PlantUML</summary>
+
+```plantuml
+@startuml
+title Quy trình: Khám trước tiêm và tiêm vaccine
+
+actor Vet
+participant "Vet API" as VetAPI
+database "DB" as DB
+participant "Notification" as Noti
+
+== Khám trước tiêm ==
+Vet -> VetAPI: POST /api/vet/health-check {pet_id, appointment_id, is_healthy, vitals}
+VetAPI -> DB: UPDATE Pet (notes/weight)
+alt Đủ điều kiện
+    VetAPI -> DB: UPDATE Appointment=CONFIRMED
+else Không đủ điều kiện
+    VetAPI -> DB: UPDATE Appointment=CANCELLED (ghi chú)
+end
+DB --> VetAPI: OK
+VetAPI --> Vet: 200
+
+== Thực hiện tiêm ==
+Vet -> VetAPI: POST /api/vet/vaccinate {pet_id, vaccine_id, appointment_id}
+VetAPI -> DB: INSERT VaccinationRecord (vaccine_id, date, next_due_date)
+VetAPI -> DB: UPDATE Appointment=COMPLETED
+DB --> VetAPI: OK
+VetAPI -> Noti: Nhắc lịch tiêm tiếp theo (next_due_date)
+Noti -> DB: INSERT Notification
+Noti --> VetAPI: OK
+VetAPI --> Vet: 200
+
+== Ghi nhận phản ứng ==
+Vet -> VetAPI: POST /api/vet/reactions {vaccination_record_id, reaction_notes}
+VetAPI -> DB: UPDATE VaccinationRecord.reaction_notes
+DB --> VetAPI: OK
+VetAPI --> Vet: 200
+@enduml
+ ```
+<details> 
 ---
+
 # V. Sơ Đồ Và PlantULM  
 
 <details> 
