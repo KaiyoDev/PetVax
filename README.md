@@ -362,7 +362,8 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 
 **5.1 Quy trình Đăng ký và đăng nhập:**
 
-<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/5b5d1e8b-a13b-4fea-b7df-795b52c41c27" />
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/87d0d22b-a424-4d83-b4f6-d4425ae74c1a" />
+
 
 <details>
 <summary>Code PlantUML</summary>
@@ -439,7 +440,8 @@ Web --> Customer: Hiển thị xác nhận
   
 **5.3 Khám trước tiêm và tiêm vaccine**
 
-<img width="667" height="755" alt="image" src="https://github.com/user-attachments/assets/968de381-14b0-4dad-8804-b3c4cc5acf81" />
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/85fb10e8-7c9e-48d1-bd9e-b529ca116d17" />
+
 
 <details>
 <summary>Code PlantUML</summary>
@@ -483,9 +485,9 @@ VetAPI --> Vet: yêu cầu thành công
  ```
 <details> 
   
-**5.4 Đặt lịch và phân công bác sĩ**
+**5.4 Đặt lịch tại nhà và phân công bác sĩ**
 
-<img width="1033" height="723" alt="image" src="https://github.com/user-attachments/assets/03a66f05-1e0d-42b7-9999-7808410066bd" />
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/5d834b4f-d176-4715-868b-7e40bf3f01cc" />
 
 <details>
 <summary>Code PlantUML</summary>
