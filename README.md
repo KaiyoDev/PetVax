@@ -380,9 +380,9 @@ database "DB" as DB
 User -> Web: Nhập thông tin đăng ký
 Web -> Auth: POST /api/auth/register
 Auth -> DB: Kiểm tra trùng username/email
-DB --> Auth: OK
+DB --> Auth: thành công
 Auth -> DB: Tạo User(role=CUSTOMER)
-DB --> Auth: OK
+DB --> Auth: thành công
 Auth --> Web: thành công {user, token}
 Web --> User: Lưu token, chuyển hướng
 
@@ -390,7 +390,7 @@ Web --> User: Lưu token, chuyển hướng
 User -> Web: Nhập username/password
 Web -> Auth: POST /api/auth/login
 Auth -> DB: Xác thực thông tin
-DB --> Auth: OK
+DB --> Auth: thành công
 Auth --> Web: yêu cầu thành công {user, token}
 Web --> User: Vào Dashboard
 @enduml
@@ -419,7 +419,7 @@ Customer -> Web: Chọn pet, thời gian, type=center
 Web -> Cust: POST /api/customer/appointments
 Cust -> DB: INSERT Appointment(status=PENDING, type=center)
 DB --> Cust: {appointment}
-Cust --> Web: 201 {appointment}
+Cust --> Web: yêu cầu thành công {appointment}
 
 Customer -> Web: Thực hiện thanh toán
 Web -> Cust: POST /api/customer/payments {appointment_id, method=vnpay}
@@ -430,7 +430,7 @@ Cust -> DB: UPDATE Payment=PAID
 Cust -> DB: UPDATE Appointment=CONFIRMED
 Cust -> Noti: Gửi thông báo xác nhận
 Noti -> DB: INSERT Notification
-Noti --> Cust: OK
+Noti --> Cust: thành công
 Cust --> Web: thành công {payment=PAID}
 Web --> Customer: Hiển thị xác nhận
 @enduml
@@ -468,17 +468,17 @@ VetAPI --> Vet: 200
 Vet -> VetAPI: POST /api/vet/vaccinate {pet_id, vaccine_id, appointment_id}
 VetAPI -> DB: INSERT VaccinationRecord (vaccine_id, date, next_due_date)
 VetAPI -> DB: UPDATE Appointment=COMPLETED
-DB --> VetAPI: OK
+DB --> VetAPI: thành công
 VetAPI -> Noti: Nhắc lịch tiêm tiếp theo (next_due_date)
 Noti -> DB: INSERT Notification
-Noti --> VetAPI: OK
-VetAPI --> Vet: 200
+Noti --> VetAPI: thành công
+VetAPI --> Vet: thành công
 
 == Ghi nhận phản ứng ==
 Vet -> VetAPI: POST /api/vet/reactions {vaccination_record_id, reaction_notes}
 VetAPI -> DB: UPDATE VaccinationRecord.reaction_notes
-DB --> VetAPI: OK
-VetAPI --> Vet: 200
+DB --> VetAPI: thành công
+VetAPI --> Vet: yêu cầu thành công
 @enduml
  ```
 <details> 
@@ -507,22 +507,22 @@ Customer -> Web: Chọn pet, thời gian, địa chỉ, type=home
 Web -> Cust: POST /api/customer/appointments
 Cust -> DB: INSERT Appointment(type=home, status=PENDING)
 DB --> Cust: {appointment}
-Cust --> Web: 201 {appointment}
+Cust --> Web: yêu cầu thành công {appointment}
 Web --> Customer: Hiển thị tình trạng PENDING
 
 == Nhân viên xử lý ==
 Staff -> StaffAPI: GET /api/staff/appointments
 StaffAPI -> DB: SELECT Appointments
 DB --> StaffAPI: List
-StaffAPI --> Staff: OK
+StaffAPI --> Staff: thành công
 
 Staff -> StaffAPI: POST /api/staff/appointments/{id}/assign-vet {vet_id}
 StaffAPI -> DB: UPDATE appointment.vet_id
-DB --> StaffAPI: OK
+DB --> StaffAPI: thành công
 StaffAPI -> Noti: Gửi thông báo cho Customer & Vet
 Noti -> DB: INSERT Notification
-Noti --> StaffAPI: OK
-StaffAPI --> Staff: 200
+Noti --> StaffAPI: thành công
+StaffAPI --> Staff: thành công
 @enduml
  ```
 <details> 
@@ -568,7 +568,7 @@ PVMS --> Notify : Gửi thông báo
 @enduml
 ```
 <details>
-<img width="1159" height="748" alt="image" src="https://github.com/user-attachments/assets/f0273a38-b3b4-4f1a-880a-295f83cd41ab" />
+<img width="1054" height="665" alt="image" src="https://github.com/user-attachments/assets/f0273a38-b3b4-4f1a-880a-295f83cd41ab" />
 
 <details>
 <summary> Code PlantUML</summary>
@@ -635,4 +635,5 @@ UC4 .> UC5 : <<include>>
 @enduml
 ```
 </details>
-<img width="1039" height="746" alt="image" src="https://github.com/user-attachments/assets/ac64f68b-86de-4428-ad1d-58b354001486" />
+<img width="1054" height="665" alt="image" src="https://github.com/user-attachments/assets/ab7f3e61-2a16-4cbc-be23-200b17368e72" />
+
