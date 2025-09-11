@@ -95,13 +95,10 @@ Hệ thống không chỉ nâng cao sức khỏe thú cưng mà còn giúp chủ
 # II. Chức năng chính của hệ thống
 **1.Các tác nhân:**
 
--Khách hàng: đăng kí/đăng nhập vào đặt lịch tiêm cho thú cưng.
-
--Nhân viên: quản lí lịch tiêm, xem thông báo, tư vấn khách hàng.
-
--Bác sĩ thú y: xem tình trạng và tiêm loại vaccine phù hợp cho thú cưng.
-
--Quản trị viên: quản lí tài khoản, quản lí vaccine và hệ thống.
+- Khách hàng: đăng kí/đăng nhập vào đặt lịch tiêm cho thú cưng.
+- Nhân viên: quản lí lịch tiêm, xem thông báo, tư vấn khách hàng.
+- Bác sĩ thú y: xem tình trạng và tiêm loại vaccine phù hợp cho thú cưng.
+- Quản trị viên: quản lí tài khoản, quản lí vaccine và hệ thống.
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c5bd6638-645b-4040-8913-568a24f503ed" />
 
@@ -378,11 +375,11 @@ Yêu cầu phi chức năng mô tả các đặc điểm kỹ thuật và vận 
 - Giao diện phải tương thích với các trình duyệt phổ biến (Chrome, Edge, Firefox, Safari).
 - Hệ thống phải hoạt động tốt trên cả thiết bị máy tính và di động (responsive design).
 
-**🧩 5. Khả năng mở rộng**
+**5. Khả năng mở rộng**
 - Kiến trúc hệ thống phải cho phép tích hợp thêm các dịch vụ thú y khác như xét nghiệm, điều trị, lưu trú…
 - Có thể kết nối với hệ thống quản lý microchip quốc gia hoặc quốc tế trong tương lai.
 
- **🧠 6. Tính dễ sử dụng**
+ **6. Tính dễ sử dụng**
 - Giao diện người dùng phải thân thiện, dễ thao tác với người không am hiểu công nghệ.
 - Các chức năng chính phải được bố trí hợp lý, dễ truy cập và có hướng dẫn sử dụng rõ ràng.
 
