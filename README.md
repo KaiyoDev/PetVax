@@ -554,7 +554,6 @@ StaffAPI --> Staff: 200
 @enduml
  ```
 <details> 
----
 
 # V. Sơ Đồ Và PlantULM  
 
