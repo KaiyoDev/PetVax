@@ -55,7 +55,7 @@ Ngày nay, với số lượng thú cưng (đặc biệt là chó và mèo) ngà
 
 Các trung tâm tiêm chủng mong muốn có một phần mềm giúp chủ nuôi dễ dàng kiểm soát việc tiêm chủng cho thú cưng, đồng thời nâng cao hiệu quả quản lý và chất lượng dịch vụ.
 
-**🎯 1.2 Mục tiêu**
+**1.2 Mục tiêu**
 
 Hệ thống PVMS được xây dựng với các mục tiêu chính:
 
